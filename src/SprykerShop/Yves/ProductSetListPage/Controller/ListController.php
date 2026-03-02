@@ -46,11 +46,6 @@ class ListController extends AbstractController
         );
     }
 
-    /**
-     * @param \Symfony\Component\HttpFoundation\Request $request
-     *
-     * @return array
-     */
     protected function executeIndexAction(Request $request): array
     {
         $limit = $request->query->getInt(static::PARAM_LIMIT, static::DEFAULT_LIMIT);

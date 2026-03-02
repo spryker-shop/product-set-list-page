@@ -41,11 +41,6 @@ class ProductSetListPageRouteProviderPlugin extends AbstractRouteProviderPlugin
         return $routeCollection;
     }
 
-    /**
-     * @param \Spryker\Yves\Router\Route\RouteCollection $routeCollection
-     *
-     * @return \Spryker\Yves\Router\Route\RouteCollection
-     */
     protected function addProductSetListRoute(RouteCollection $routeCollection): RouteCollection
     {
         $route = $this->buildRoute('/product-sets', 'ProductSetListPage', 'List', 'indexAction');

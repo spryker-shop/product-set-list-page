@@ -12,9 +12,6 @@ use SprykerShop\Yves\ProductSetListPage\Dependency\Client\ProductSetListPageToPr
 
 class ProductSetListPageFactory extends AbstractFactory
 {
-    /**
-     * @return \SprykerShop\Yves\ProductSetListPage\Dependency\Client\ProductSetListPageToProductSetPageSearchClientInterface
-     */
     public function getProductSetPageSearchClient(): ProductSetListPageToProductSetPageSearchClientInterface
     {
         return $this->getProvidedDependency(ProductSetListPageDependencyProvider::CLIENT_PRODUCT_SET_PAGE_SEARCH);
