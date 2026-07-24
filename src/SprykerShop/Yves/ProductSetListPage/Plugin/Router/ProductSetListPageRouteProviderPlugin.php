@@ -25,14 +25,10 @@ class ProductSetListPageRouteProviderPlugin extends AbstractRouteProviderPlugin
     public const ROUTE_NAME_PRODUCT_SETS = 'product-sets';
 
     /**
-     * Specification:
+     * {@inheritDoc}
      * - Adds Routes to the RouteCollection.
      *
      * @api
-     *
-     * @param \Spryker\Yves\Router\Route\RouteCollection $routeCollection
-     *
-     * @return \Spryker\Yves\Router\Route\RouteCollection
      */
     public function addRoutes(RouteCollection $routeCollection): RouteCollection
     {
